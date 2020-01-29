@@ -14,14 +14,14 @@
     }
 
     .fieldContainer {
-        width: 345px;
+        width: 100%;
     }
 
     .inputField {
-        width: 320px;
+        width: 90%;
     }
 
     #inputButton {
-        width: 345px;
+        width: 100%;
     }
 }

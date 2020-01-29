@@ -17,7 +17,6 @@ body, html {
 	margin: 0px;
 	height: 90px;
 	width: 100%;
-	max-width: 1366px;
 	overflow: hidden;
 	color: #FFFFFF;
 	/* background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%); */
@@ -91,7 +90,10 @@ body, html {
 	height: 52px;
 	text-align: center;
 	/* margin-right: 10%; */
-	background-image: url(https://c.radikal.ru/c04/1909/cc/7587fd44a907.png);
+	/* background-image: url(https://c.radikal.ru/c04/1909/cc/7587fd44a907.png); */
+	border: 1px solid #E5E31F;
+	box-sizing: border-box;
+	border-radius: 10px;
 	/* background: brown; */
 }
 

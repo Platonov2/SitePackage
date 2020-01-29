@@ -55,7 +55,7 @@ body, html {
 .slideText {
 	display: inline-block;
 	text-align: left;
-	margin-left: 4%;
+	margin-left: 12%;
 	margin-bottom: 10%;
 	height: 50%;
 	width: 40%;
@@ -125,8 +125,8 @@ body, html {
 	position: absolute;
 	list-style-type: none;
 	text-align: center;
-	margin-left: 46vw;
-	margin-top: -10vw;
+	margin-left: 47vw;
+	margin-top: -4vw;
 	z-index: 1;
 	/* background: yellow; */
 }

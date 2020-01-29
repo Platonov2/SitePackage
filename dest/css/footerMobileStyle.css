@@ -9,7 +9,7 @@
     }
 
     #lists {
-        width: 350px;
+        width: 100vw;
         margin-left: -25px;
         margin-bottom: 90px;
     }
@@ -25,6 +25,10 @@
 
     #secondFooterList {
         margin-left: 15%;
+    }
+
+    .secondFooterListEl {
+        width: auto;
     }
 
     #thirdFooterList {
