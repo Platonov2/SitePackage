@@ -1,0 +1,26 @@
+@media screen and (max-width: 678px) {
+    #headerLine {
+        display: none;
+    }
+
+    #courier {
+        display: none;
+    }
+
+    #headerNumber {
+        display: none;
+    }
+
+    #logoAndText {
+        width: 48%;
+    }
+
+    #numberAndLoginButton {
+        width: 48%;
+        margin-left: 0%;
+    }
+
+    #logInButton {
+        margin-top: 27px;
+    }
+}

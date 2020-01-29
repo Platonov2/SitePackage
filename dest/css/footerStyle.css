@@ -1,0 +1,107 @@
+body, html { 
+	margin: 0px;
+    padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url('../fonts/ProximaNova-Regular.ttf');
+   }
+
+footer {
+	position: relative;
+	display: inline-block;
+	height: 320px;
+	width: 100%;
+    background: #23415E;
+    color: #FFFFFF;
+}
+
+#footerContainer {
+	margin-top: 79px;
+	/* background: gold; */
+}
+
+
+#footerLogo {
+	display: inline-block;
+	margin-left: 4%;
+	vertical-align: top;
+	margin-top: 5px;
+	/* background: blue; */
+}
+
+#lists {
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+}
+
+.footerList {
+	display: inline-block;
+	margin-top: -7px;
+	vertical-align: top;
+	list-style-type: none;
+	/* background: red; */
+}
+
+#firstFooterList {
+	display: inline-block;
+	vertical-align: top;
+	width: 170px;
+	height: 144px;
+	/* background: darkgreen; */
+}
+
+.firstFooterListEl {
+	display: flex;
+	font-family: Proxima Nova;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 15px;
+	width: 170px;
+	
+	/* background: green; */
+}
+
+#secondFooterList {
+	display: inline-block;
+	width: 170px;
+	height: 108px;
+	margin-left: 1%;
+	/* background: crimson; */
+}
+
+.secondFooterListEl {
+	display: flex;
+	font-family: Proxima Nova;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 15px;
+	width: 170px;
+	/* background: green; */
+}
+
+#thirdFooterList {
+	display: inline-block;
+	text-align: left;
+	width: 170px;
+	height: 133px;
+	margin-left: 12%;
+	margin-right: 6%;
+	/* background: brown; */
+}
+
+.thirdFooterListEl {
+	display: flex;
+	width: 180px;
+	font-family: Proxima Nova;
+	font-size: 15px;
+	line-height: 15px;
+	color: #A9C5E0;
+	/* background: green; */
+}

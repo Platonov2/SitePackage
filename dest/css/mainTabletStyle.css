@@ -1,0 +1,53 @@
+@media screen and (max-width: 863px) {
+    #logInButton {
+        margin-right: 0px;
+    }
+    
+    #headerFrame {
+        height: 110px;
+    }
+
+    #sliderList {
+        margin-top: 70px;
+    }
+
+    .slide {
+        min-width: 0px;
+        width: calc(100vw - 17px);
+    }
+
+    .slideText {
+        width: 90%;
+        margin-left: 15px;
+    }
+
+    .smallSlideText {
+        width: 660px;
+        margin-bottom: 220px;
+    }
+
+    .slideImage {
+        display: none;
+    }
+
+    .slideButton {
+        display: none;
+    }
+
+
+
+
+
+    #list {
+        width: 100%;
+        top: -10px;
+        padding-left: 0px;
+
+    }
+
+    #list li {
+        width: 47%;
+        margin-left: -1px;
+        margin-top: 100px;
+    }
+}

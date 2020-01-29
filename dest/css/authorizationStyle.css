@@ -1,0 +1,133 @@
+body, html { 
+	margin: 0px;
+    padding: 0px;
+	height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url('../fonts/ProximaNova-Regular.ttf');
+   }
+
+/* Авторизация */
+#authorization {
+    display: none;
+}
+
+#fadeBackground {
+    position: fixed;
+    z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity:.70;
+}
+
+#authorizationForm {
+    position: fixed;
+    z-index: 2;
+    width: 560px;
+    height: 470px;
+    margin-top: 10%;
+    margin-left: calc((100vw - 560px) / 2);
+    text-align: left;
+    background-image: url(https://a.radikal.ru/a05/1911/be/75f41abac896.png);
+    /* background: blue; */
+}
+
+#closeButton {
+    position: absolute;
+    margin-left: 504px;
+    margin-top: 30px;
+    width: 25px;
+    height: 25px;
+    background-image: url(https://d.radikal.ru/d43/1911/bb/453bf9798fa3.png);
+}
+
+#textPadding {
+    display: inline-block;
+    width: 430px;
+    height: 342px;
+    margin-top: 64px;
+    margin-left: 70px;
+    /* background: green; */
+}
+
+#zagolovokH {
+    margin-top: -10px;
+    font-family: Proxima Nova;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 46px;
+    /* background: blue; */
+}
+
+#zagolovokP {
+    margin-top: -10px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    line-height: 24px;
+    /* background: red; */
+}
+
+#wrongDataContainer {
+    display: inline-block;
+    margin-top: -15px;
+    height: 15px;
+    /* background: chocolate; */
+}
+
+#wrongDataText {
+    display: none;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: red;
+}
+
+
+
+
+
+
+#inputForm {
+    margin-top: 20px;
+    /* background: yellow; */
+}
+
+.fieldContainer {
+	width: 430px;
+	height: 48px;
+	border: 1px solid #23415E;
+	border-radius: 6px;
+	margin-top: 8px;
+}
+
+.inputField {
+	width: 398px;
+	height: 20px;
+	margin-left: 16px;
+	margin-top: 14px;
+	margin-right: 16px;
+    margin-bottom: 14px;
+    font-family: Proxima Nova;
+	font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+	line-height: 20px;
+	border: 0px;
+}
+
+#inputButton {
+    width: 100%;
+    margin-top: 50px;
+    height: 52px;
+    border: 0px;
+    border-radius: 10px;
+    background-image: url(https://a.radikal.ru/a39/1911/02/4f83c64ee329.png);
+    /* background: blanchedalmond; */
+}

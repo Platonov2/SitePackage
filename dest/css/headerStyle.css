@@ -1,0 +1,107 @@
+body, html { 
+	margin: 0px;
+    padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url('../fonts/ProximaNova-Regular.ttf');
+   }
+
+/* Шапка */
+#header {
+	display: inline-block;
+  	position: relative;
+	margin: 0px;
+	height: 90px;
+	width: 100%;
+	max-width: 1366px;
+	overflow: hidden;
+	color: #FFFFFF;
+	/* background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%); */
+}
+
+#headerInfo {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	vertical-align: middle;
+	/* background: green; */
+}
+
+#logoAndText {
+	display: inline-block;
+	width: 48%;
+	vertical-align: middle;
+	/* background: blue; */
+}
+
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 120px;
+	height: 16px;
+	margin-left: 10%;
+	/* background: red; */
+}
+
+#headerLine {
+	display: inline-block;
+	margin-left: 7%;
+	height: 14px;
+}
+
+#courier {
+	display: inline-block;
+	line-height: 162%;
+	margin-left: 3%;
+	color: #A9C5E0;
+}
+
+#numberAndLoginButton {
+	display: inline-block;
+	width: 48%;
+	text-align: right;
+	vertical-align: middle;
+	/* background: yellow; */
+}
+
+#headerNumber {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 7%;
+	/* background: aqua; */
+}
+
+#headerNumber #number {
+	display: inline-block;
+	font-family: Proxima Nova;
+	font-size: 13px;
+	line-height: 24px;
+	color: #A9C5E0;
+	/* background: red; */
+}
+
+#logInButton {
+	display: inline-block;
+	width: 170px;
+	height: 52px;
+	text-align: center;
+	/* margin-right: 10%; */
+	background-image: url(https://c.radikal.ru/c04/1909/cc/7587fd44a907.png);
+	/* background: brown; */
+}
+
+#logInButton #logInText {
+	/* display: inline-block; */
+	font-family: Proxima Nova;
+	font-size: 18px;
+	line-height: 100%;
+	margin-top: 15px;
+	vertical-align: middle;
+	color: #E5E31F;
+	/* background: blue; */
+}

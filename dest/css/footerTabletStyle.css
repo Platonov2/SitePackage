@@ -1,0 +1,34 @@
+@media screen and (max-width: 863px) {
+    footer {
+        height: 558px;
+    }
+
+    #footerLogo {
+        margin-left: 15px;
+    }
+
+    #lists {
+        width: 500px;
+        height: 370px;
+        margin-left: 10px;
+        top: -10px;
+        text-align: left;
+    }
+
+    #firstFooterList {
+        width: 110px;
+        margin-left: 70px;
+    }
+
+    #secondFooterList {
+        width: 110px;
+        margin-left: 30px;
+    }
+
+    #thirdFooterList {
+        display: block;
+        width: 110px;
+        margin-top: 96px;
+        margin-left: 70px;
+    }
+}

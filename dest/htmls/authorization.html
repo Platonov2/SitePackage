@@ -1,0 +1,28 @@
+
+        <div id = "authorization">
+            <div id = "fadeBackground"></div id = "fadeBackground">
+            
+            <div id = "authorizationForm">
+                <a id="closeButton" href="javascript:void(0)" onclick = "document.getElementById('authorization').style.display='none';document.getElementById('wrongDataText').style.display='none';"></a>
+                    
+                <div id = "textPadding">
+                    <h1 id = "zagolovokH">Авторизация</h1>
+                    <p id = "zagolovokP">Введите логин и пароль, чтобы войти в личный кабинет</p>
+                    <div id = "wrongDataContainer">
+                        <p id = "wrongDataText">Неверный логин</p>
+                    </div id = "wrongDataContainer">
+            
+                    <form id = "inputForm" onsubmit="return CheckMail()">
+                        <div class = "fieldContainer">
+                            <input id="loginForm" class = "inputField" type="text" name="login" placeholder = "Логин"/>
+                        </div>
+
+                        <div class = "fieldContainer">
+                            <input id="passwordForm" class = "inputField" type="text" name="password" placeholder = "Пароль"/>
+                        </div>
+                        
+                        <input id = "inputButton" type="submit" name="send" value="Войти" onClick="CheckMail();">
+                    </form>
+                </div id = "textPadding">
+            </div id = "authorizationForm">
+        </div id = "authorization">

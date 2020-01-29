@@ -1,0 +1,33 @@
+@media screen and (max-width: 678px) {
+    footer {
+        height: 650px;
+    }
+
+    #footerLogo {
+        display: block;
+        margin-bottom: 60px;
+    }
+
+    #lists {
+        width: 350px;
+        margin-left: -25px;
+        margin-bottom: 90px;
+    }
+
+    .footerList {
+        display: block;
+        margin-left: 0px;
+    }
+
+    #firstFooterList {
+        margin-left: 15px;
+    }
+
+    #secondFooterList {
+        margin-left: 15%;
+    }
+
+    #thirdFooterList {
+        margin-left: 15px;
+    }
+}

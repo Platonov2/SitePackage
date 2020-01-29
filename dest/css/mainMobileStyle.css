@@ -1,0 +1,56 @@
+@media screen and (max-width: 678px) {
+    #slider {
+        margin-bottom: 100px;
+    }
+
+    .slideText {
+        width: 90%;
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .smallSlideText {
+        margin-top: 18px;
+        width: 90%;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+
+    .slideButton {
+        display: flex;
+        margin-top: 63px;
+        margin-bottom: 15px;
+        height: 52px;
+    }
+
+    #buttonList {
+        margin-left: 36%;
+    }
+
+
+
+
+
+    #mainHeader {
+        margin-top: 96px;
+    }
+
+    #list {
+        width: 100%;
+    }
+
+    #list li {
+        width: 90%;
+        margin-left: 0%;
+    }
+
+
+
+
+
+    #footerFrame {
+        margin-top: 100px;
+    }
+}

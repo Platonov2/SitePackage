@@ -1,0 +1,9 @@
+@media screen and (max-width: 863px) {
+    #inputFormAdmin {
+        width: 100%;
+    }
+
+    #textareaContainer {
+        width: 100%;
+    }
+}

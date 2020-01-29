@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пример веб-страницы</title>
+  <link rel="stylesheet" type="text/css" href="../css/adminStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/adminTabletStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/adminMobileStyle.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/headerStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/headerTabletStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/headerMobileStyle.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/authorizationStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/authorizationMobileStyle.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/footerStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/footerTabletStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/footerMobileStyle.css">
+
+  <link href="media-queries.css" rel="stylesheet" type="text/css">
+  <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ </head>
+  
+ <body>
+    <div id = "headerFrame">
+                
+                        <div id = "authorization">
+                            <div id = "fadeBackground"></div id = "fadeBackground">
+                            
+                            <div id = "authorizationForm">
+                                <a id="closeButton" href="javascript:void(0)" onclick = "document.getElementById('authorization').style.display='none';document.getElementById('wrongDataText').style.display='none';"></a>
+                                    
+                                <div id = "textPadding">
+                                    <h1 id = "zagolovokH">Авторизация</h1>
+                                    <p id = "zagolovokP">Введите логин и пароль, чтобы войти в личный кабинет</p>
+                                    <div id = "wrongDataContainer">
+                                        <p id = "wrongDataText">Неверный логин</p>
+                                    </div id = "wrongDataContainer">
+                            
+                                    <form id = "inputForm" onsubmit="return CheckMail()">
+                                        <div class = "fieldContainer">
+                                            <input id="loginForm" class = "inputField" type="text" name="login" placeholder = "Логин"/>
+                                        </div>
+                
+                                        <div class = "fieldContainer">
+                                            <input id="passwordForm" class = "inputField" type="text" name="password" placeholder = "Пароль"/>
+                                        </div>
+                                        
+                                        <input id = "inputButton" type="submit" name="send" value="Войти" onClick="CheckMail();">
+                                    </form>
+                                </div id = "textPadding">
+                            </div id = "authorizationForm">
+                        </div id = "authorization">
+        
+                <!-- Шапка -->
+                <header id = "header">
+                    <div id = "headerInfo">
+                        <div id = "logoAndText">
+                            <div class = "logo">
+                                <img src = https://d.radikal.ru/d03/1909/11/aed928f47288.png>
+                            </div class = "logo">
+                                 
+                            <img id = "headerLine" src = "https://d.radikal.ru/d42/1909/ac/dd8f245e4d33.png">
+                            <p id = "courier">Курьерская служба доставки</p>
+                        </div id = "logoAndText">
+                                 
+                        <div id = "numberAndLoginButton">
+                            <div id = "headerNumber">
+                                <img src = "https://c.radikal.ru/c23/1909/4b/76575a0eb93c.png">
+                                <p id = "number">8 (909) 023-12-51</p>
+                            </div id = "headerNumber">
+                                 
+                            <div id = "logInButton" href = "javascript:void(0)" onclick = "document.getElementById('authorization').style.display='block';document.getElementsByTagName('body').style.overflow='hidden'">
+                                <div id = "logInText">
+                                    <a id = "logInText">Вход</a>
+                                </div id = "logInText">
+                            </div id = "logInButton">
+                        </div id = "numberAndLoginButton">
+                    </div id = "headerInfo">
+                </header id = "header">
+    </div id = "headerFrame">
+
+	<!-- Main -->
+    <main> 
+        <div id = "mainContainer">
+            <h1 id = "zagolovokHAdmin">Добавить новость</h1>
+            <p id = "zagolovokPAdmin">Введите текст новости, а также приложите изображение (размер: 270х270px, формат JPG,PNG)</p>
+
+            <form id = "inputFormAdmin"  method="post" action="../js/adminScript.js">
+                <div id = "textareaContainer">
+                    <textarea id = "textField" placeholder = "Введите текст новости"></textarea>
+                </div id = "textareaContainer">
+            </form>
+
+
+
+            <div id = "addImageContainer">
+                <div id = "image"><img src = "https://b.radikal.ru/b29/1911/2d/caa99feb7547.png"></div>
+                <p id = "addImageText">+ Добавить изображение</p>
+            </div id = "addImageContainer">
+
+            <form id = "inputFile">
+                <input id = "imageFile" type = "file">
+            </form>
+
+            <div id = "previewContainer">
+                <img id="imagePreview" src="" alt="" />
+                <p id = "textPreview">Текст</p>
+                <a id="closeImageButton" href="javascript:void(0)" onclick = "document.getElementById('previewContainer').style.display='none';"></a>
+            </div>
+
+
+
+            <div id = "button" type="submit" form="inputFormAdmin" onClick="CheckText();">
+                <div id = "buttonText">Применить</div>
+            </div id = "button">
+        </div id = "mainContainer">
+   </main>
+
+    <!-- Footer -->
+    <div id = "footerFrame">
+        	<!-- Подвал -->
+            <footer>
+                <div id = "footerContainer">
+        		    <div id = "footerLogo">
+        		        <div class = "logo">
+        		    	    <img src = https://d.radikal.ru/d03/1909/11/aed928f47288.png>
+        		        </div class = "logo">
+        		    </div id = "footerLogo">
+        		 
+        			<div id = "lists">
+                    	<div id = "firstFooterList">
+        		    		<ul class = "footerList">
+        		    			<li class = "firstFooterListEl"><p>О компании</p></li>
+        						<li class = "firstFooterListEl"><p>Вакансии</p></li>
+        		    			<li class = "firstFooterListEl"><p>Клиенту</p></li>
+        		    			<li class = "firstFooterListEl"><p>О компании</p></li>
+        		    		</ul class = "footerList"> 
+        		    	</div id = "firstFooterList">
+        		 
+        			    <div id = "secondFooterList">
+        		    		<ul class = "footerList">
+        		    			<li class = "secondFooterListEl"><p>Доставка из китая</p></li>
+        		    			<li class = "secondFooterListEl"><p>Все услуги</p></li>
+        						<li class = "secondFooterListEl"><p>Акции</p></li>
+        		    		</ul class = "footerList"> 
+        		    	</div id = "secondFooterList">
+        		 
+        			    <div id = "thirdFooterList">
+        		    		<ul class = "footerList">
+        		    			<li class = "thirdFooterListEl"><p>manager@uexpress.ru 115221</p></li>
+        		    			<li class = "thirdFooterListEl"><p>г. Челябинск, ул. Северная, д. 29-в</p></li>
+        		    			<li class = "thirdFooterListEl"><p>Мы работаем по 24 часа 5 дней в неделю</p></li>
+        		    		</ul class = "footerList"> 
+        				</div id = "thirdFooterList">
+        			</div id = "lists">
+                </div id = "footerContainer"> 
+            </footer>
+    </div id = "footerFrame">
+ </body>
+
+ <script src="../js/adminScript.js"></script>
+ <script src="../js/authorizationScript.js"></script>
+
+</html>

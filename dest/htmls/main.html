@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пример веб-страницы</title>
+  <link rel="stylesheet" type="text/css" href="../css/mainStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/mainTabletStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/mainMobileStyle.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/headerStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/headerTabletStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/headerMobileStyle.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/authorizationStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/authorizationMobileStyle.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/footerStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/footerTabletStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/footerMobileStyle.css">
+
+  <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../js/mainScript.js"></script>
+  <script src="../js/authorizationScript.js"></script>
+ </head>
+  
+ <body>
+	
+	<div id = "backgroundContainer">
+		<div id = "headerFrame">
+			        
+			                <div id = "authorization">
+			                    <div id = "fadeBackground"></div id = "fadeBackground">
+			                    
+			                    <div id = "authorizationForm">
+			                        <a id="closeButton" href="javascript:void(0)" onclick = "document.getElementById('authorization').style.display='none';document.getElementById('wrongDataText').style.display='none';"></a>
+			                            
+			                        <div id = "textPadding">
+			                            <h1 id = "zagolovokH">Авторизация</h1>
+			                            <p id = "zagolovokP">Введите логин и пароль, чтобы войти в личный кабинет</p>
+			                            <div id = "wrongDataContainer">
+			                                <p id = "wrongDataText">Неверный логин</p>
+			                            </div id = "wrongDataContainer">
+			                    
+			                            <form id = "inputForm" onsubmit="return CheckMail()">
+			                                <div class = "fieldContainer">
+			                                    <input id="loginForm" class = "inputField" type="text" name="login" placeholder = "Логин"/>
+			                                </div>
+			        
+			                                <div class = "fieldContainer">
+			                                    <input id="passwordForm" class = "inputField" type="text" name="password" placeholder = "Пароль"/>
+			                                </div>
+			                                
+			                                <input id = "inputButton" type="submit" name="send" value="Войти" onClick="CheckMail();">
+			                            </form>
+			                        </div id = "textPadding">
+			                    </div id = "authorizationForm">
+			                </div id = "authorization">
+			
+			        <!-- Шапка -->
+			        <header id = "header">
+			            <div id = "headerInfo">
+			                <div id = "logoAndText">
+			                    <div class = "logo">
+			                        <img src = https://d.radikal.ru/d03/1909/11/aed928f47288.png>
+			                    </div class = "logo">
+			                         
+			                    <img id = "headerLine" src = "https://d.radikal.ru/d42/1909/ac/dd8f245e4d33.png">
+			                    <p id = "courier">Курьерская служба доставки</p>
+			                </div id = "logoAndText">
+			                         
+			                <div id = "numberAndLoginButton">
+			                    <div id = "headerNumber">
+			                        <img src = "https://c.radikal.ru/c23/1909/4b/76575a0eb93c.png">
+			                        <p id = "number">8 (909) 023-12-51</p>
+			                    </div id = "headerNumber">
+			                         
+			                    <div id = "logInButton" href = "javascript:void(0)" onclick = "document.getElementById('authorization').style.display='block';document.getElementsByTagName('body').style.overflow='hidden'">
+			                        <div id = "logInText">
+			                            <a id = "logInText">Вход</a>
+			                        </div id = "logInText">
+			                    </div id = "logInButton">
+			                </div id = "numberAndLoginButton">
+			            </div id = "headerInfo">
+			        </header id = "header">
+		</div id = "headerFrame">
+
+	<!-- Slider -->
+	<div id = "slider">
+		<ul id = "sliderList">
+			<li class = "slide">
+				<div class = "slideText">
+					<h1>Срочная доставка день в день</h1>
+		 			<p class = "smallSlideText">Для тех, кто не может ждать у нас есть услуга срочной курьерской доставки корреспондеции и других видов отправлений.</p>
+			 
+					<div class = "slideButton">
+			 			<p class = "textSlideButton">Заказать доставку</p id = "textButton">
+		   			</div class = "slideButton">
+		 		</div class = "slideText">
+
+				<div class = "slideImage">
+					<img id = "slideImage1" src = "https://d.radikal.ru/d24/1909/f5/a63a66234334.png">
+				</div class = "slideImage">
+			</li class = "slide">
+
+			<li class = "slide">
+				<div class = "slideText">
+					<h1>Подписание договора за 1 час</h1>
+					<p class = "smallSlideText">В течение часа наш курьер заберет вашу посылку и подпишет с Вами договор о предоставлении услуг.</p>
+				 
+					<div class = "slideButton">
+						<p class = "textSlideButton">Заказать доставку</p id = "textButton">
+					</div class = "slideButton">
+				</div class = "slideText">
+	
+				<div class = "slideImage">
+					<img id = "slideImage2" src = "https://a.radikal.ru/a20/1910/0c/8fb5cec701b3.png">
+				</div class = "slideImage">
+			</li class = "slide">
+		</ul id = "sliderList">
+	</div id = "slider">
+	
+	<ul id = "buttonList">
+		<li class = "button">
+			<img class = "buttonImg" src = https://b.radikal.ru/b31/1910/2c/600c859b7f83.png>
+		</li class = "button">
+
+		<li class = "button">
+			<img class = "buttonImg" src = https://b.radikal.ru/b31/1910/2c/600c859b7f83.png>
+		</li class = "button">
+	</ul id = "buttonList">	
+
+	</div id = "backgroundContainer">
+
+	<!-- Main -->
+    <main> 
+		<div id = "mainHeader">
+        	<h2>5 шагов к заявке</h2>
+		</div id = "mainHeader">
+		 
+		<ul id = "list">
+			<li>
+       			<img src = "https://b.radikal.ru/b23/1909/2d/96c6f0b466de.png" width = "51" height = "52">
+				<h1>Расчетная стоимость</h1>
+       			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.</p>
+			</li>
+			 
+			<li>
+				<img src = "https://c.radikal.ru/c18/1909/3b/176e7fcffc19.png" width = "67" height = "49">
+				<h1>Вызвать курьера</h1>
+          		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.</p>
+			</li>
+			 
+			<li>
+			 	<img src = "https://a.radikal.ru/a27/1909/77/76f4cdf04660.png" width = "63" height = "59">
+				<h1>Оплатить услуги</h1>
+       			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.</p>
+			</li>
+			 
+			<li>
+			 	<img src = "https://a.radikal.ru/a43/1909/fc/b062b365a1f7.png" width = "54" height = "54">
+			 	<h1>Заключить договор</h1>
+         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.</p>
+			</li>
+			 
+			<li>
+			 	<img src = "https://c.radikal.ru/c07/1909/9a/51f9fb7f8af1.png" width = "72" height = "59">
+				<h1>Предоставить данные</h1>
+         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.</p>
+			</li>
+		</ul id = "list">
+   </main>
+
+   <!-- Footer -->
+   <div id = "footerFrame">
+        	<!-- Подвал -->
+            <footer>
+                <div id = "footerContainer">
+        		    <div id = "footerLogo">
+        		        <div class = "logo">
+        		    	    <img src = https://d.radikal.ru/d03/1909/11/aed928f47288.png>
+        		        </div class = "logo">
+        		    </div id = "footerLogo">
+        		 
+        			<div id = "lists">
+                    	<div id = "firstFooterList">
+        		    		<ul class = "footerList">
+        		    			<li class = "firstFooterListEl"><p>О компании</p></li>
+        						<li class = "firstFooterListEl"><p>Вакансии</p></li>
+        		    			<li class = "firstFooterListEl"><p>Клиенту</p></li>
+        		    			<li class = "firstFooterListEl"><p>О компании</p></li>
+        		    		</ul class = "footerList"> 
+        		    	</div id = "firstFooterList">
+        		 
+        			    <div id = "secondFooterList">
+        		    		<ul class = "footerList">
+        		    			<li class = "secondFooterListEl"><p>Доставка из китая</p></li>
+        		    			<li class = "secondFooterListEl"><p>Все услуги</p></li>
+        						<li class = "secondFooterListEl"><p>Акции</p></li>
+        		    		</ul class = "footerList"> 
+        		    	</div id = "secondFooterList">
+        		 
+        			    <div id = "thirdFooterList">
+        		    		<ul class = "footerList">
+        		    			<li class = "thirdFooterListEl"><p>manager@uexpress.ru 115221</p></li>
+        		    			<li class = "thirdFooterListEl"><p>г. Челябинск, ул. Северная, д. 29-в</p></li>
+        		    			<li class = "thirdFooterListEl"><p>Мы работаем по 24 часа 5 дней в неделю</p></li>
+        		    		</ul class = "footerList"> 
+        				</div id = "thirdFooterList">
+        			</div id = "lists">
+                </div id = "footerContainer"> 
+            </footer>
+    </div id = "footerFrame">
+
+ </body>
+</html>
